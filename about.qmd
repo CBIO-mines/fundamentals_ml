@@ -2,12 +2,12 @@
 title: "About"
 ---
 
+This site was created using [Quarto](https://quarto.org/) by [Giann Karlo](https://giannkarlo.info/).
+
 ## Teachers
 
 - [Chloé-Agathe Azencott](https://cazencott.info/)
 - [Thomas Walter](https://thomaswalter.github.io/)
 - [Vincent Mallet](https://vincentx15.github.io/)
 - [Alice Lacan](https://www.linkedin.com/in/alice-lacan )
-- [Giann Karlo Aguirre-Samboní](https://giannkarlo.info/)
-
-This site was created using [Quarto](https://quarto.org/) by [Giann Karlo Aguirre-Samboní](https://giannkarlo.info/).
+- [Giann Karlo](https://giannkarlo.info/)
