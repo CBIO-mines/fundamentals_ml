@@ -351,6 +351,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>fig.tight_layout(pad<span class="op">=</span><span class="fl">1.0</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p><strong>Question:</strong> Observe the orders of magnitude / value ranges of the different variables. What can you comment about them ?</p>
+<button onclick="toggleVisibility('answer1')">
+Click for Answer
+</button>
+<div id="answer1" style="display:none;">
+<pre>    cellranger count \
+    --id=ETV6-RUNX1_1 \
+    --sample=ETV6-RUNX1_1 \
+    --transcriptome=cellranger_index \
+    --fastqs=course_data/reads \
+    --localcores=4 \
+    --create-bam=true
+</pre>
+<script>
+function toggleVisibility(id) {
+   var element = document.getElementById(id);
+   if (element.style.display === 'none') {
+       element.style.display = 'block';
+   } else {
+       element.style.display = 'none';
+   }
+}
+</script>
+</div>
 <div class="callout callout-style-simple callout-tip no-icon callout-titled" title="Click for answer">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
