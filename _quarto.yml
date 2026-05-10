@@ -19,7 +19,7 @@ website:
       - href: about.qmd
     right:
       - icon: github
-        href: https://github.com/CBIO-mines/fml-dassault-systems-en
+        href: https://github.com/giannkas/fundamentals_ml
         aria-label: GitHub
   sidebar: 
     logo: assets/mines_paris_psl_logo.png
