@@ -2,7 +2,7 @@
 title: "About"
 ---
 
-This site was created using [Quarto](https://quarto.org/) by [Giann Karlo](https://giannkarlo.info/).
+This site was created using [Quarto](https://quarto.org/) by [Giann Karlo Aguirre-Samboní](https://giannkarlo.info/).
 
 ## Teachers
 
