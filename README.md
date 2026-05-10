@@ -18,7 +18,7 @@ To use the same libraries, you can make use of the `package_list.yml` file:
 ```
 
 ## Contenus
-* [Practical 1](notebooks/1-Intro_solved.ipynb): getting started with `scikit-learn`
+* [Practical 1](notebooks/1-Intro.ipynb): getting started with `scikit-learn`
 * Practical 2: model selection, regularization
 * Practical 3: dimension reduction and clustering
 * Practical 4: trees and ensemble models
