@@ -1,2 +1,9 @@
+.quarto/
+.ipynb_checkpoints/
+/env/
 /.quarto/
-**/*.quarto_ipynb
+html/
+.jupyter*/
+_freeze/
+_site/
+.DS_Store
