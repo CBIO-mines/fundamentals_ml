@@ -576,8 +576,8 @@ auto-mpg.tsv        100%[===================&gt;]  17.07K  --.-KB/s    in 0.001s
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><img src="../imgs/initial_histogram_mpg.png" class="img-fluid"></p>
-<p><img src="../imgs/initial_histogram_mpg_2.png" class="img-fluid"></p>
+<p><img src="../imgs/baseline_histogram_mpg.png" class="img-fluid"></p>
+<p><img src="../imgs/baseline_histogram_mpg_2.png" class="img-fluid"></p>
 </div>
 </div>
 </div>
@@ -1100,7 +1100,7 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 </div>
 <div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><img src="../imgs/initial_linear_regression_mpg.png" class="img-fluid"></p>
+<p><img src="../imgs/baseline_linear_regression_mpg.png" class="img-fluid"></p>
 </div>
 </div>
 </div>
@@ -1108,7 +1108,7 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 <section id="regression-coefficients" class="level3">
 <h3 class="anchored" data-anchor-id="regression-coefficients">Regression coefficients</h3>
 <p>To understand our model, we can look at the coefficients attributed to each variable in the learnt linear model.</p>
-<div id="41" class="cell" data-execution_count="22">
+<div id="41" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Display, for each variable, the absolute value of its coefficient in the model</span></span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>num_features <span class="op">=</span> X.shape[<span class="dv">1</span>]</span>
 <span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>feature_names <span class="op">=</span> df.drop(columns<span class="op">=</span>[<span class="st">'mpg'</span>, <span class="st">'car name'</span>]).columns</span>
@@ -1118,17 +1118,26 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 <span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>tmp <span class="op">=</span> plt.xticks(<span class="bu">range</span>(num_features), feature_names, rotation<span class="op">=</span><span class="dv">90</span>)</span>
 <span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>tmp <span class="op">=</span> plt.ylabel(<span class="st">'Coefficient'</span>)</span>
 <span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="1-Intro_solved_files/figure-html/cell-22-output-1.png" class="img-fluid figure-img"></p>
-</figure>
+</div>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Click for figure">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Click for figure
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><img src="../imgs/baseline_coefficients_mpg.png" class="img-fluid"></p>
 </div>
 </div>
 </div>
 <p><strong>Question:</strong> Which variable has the highest coefficient (in absolute value) ? Do you think that it means this variable plays a very important part in the prediction ?</p>
 <div class="callout callout-style-simple callout-note no-icon callout-titled" title="Click for answer">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -1137,7 +1146,7 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>The variable with the highest coefficient in absolute value is <strong><code>origin</code></strong>.</p>
 <p>Regarding whether this means <code>origin</code> plays a very important part in the prediction:</p>
@@ -2118,7 +2127,7 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 </div>
 </div>
 <p><strong>Question:</strong> Compare it to the previous RMSE. Are the predictions any different ?</p>
-<div id="68" class="cell" data-execution_count="34">
+<div id="68" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">5</span>, <span class="dv">5</span>))</span>
 <span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>plt.scatter(y_pred_scaled, y_pred)</span>
 <span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -2135,25 +2144,22 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 <span id="cb41-14"><a href="#cb41-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Diagonal y=x</span></span>
 <span id="cb41-15"><a href="#cb41-15" aria-hidden="true" tabindex="-1"></a>plt.plot([axis_min, axis_max], [axis_min, axis_max], <span class="st">'k-'</span>)</span>
 <span id="cb41-16"><a href="#cb41-16" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="1-Intro_solved_files/figure-html/cell-34-output-1.png" class="img-fluid figure-img"></p>
-</figure>
 </div>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Click for figure">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
 </div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="1-Intro_solved_files/figure-html/cell-34-output-2.png" class="img-fluid figure-img"></p>
-</figure>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Click for figure
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="1-Intro_solved_files/figure-html/cell-34-output-3.png" class="img-fluid figure-img"></p>
-</figure>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><img src="../imgs/scaled_histogram_mpg.png" class="img-fluid"></p>
+<p><img src="../imgs/scaled_histogram_mpg_2.png" class="img-fluid"></p>
+<p><img src="../imgs/scaled_baseline_comparison_mpg.png" class="img-fluid"></p>
 </div>
 </div>
 </div>
@@ -2161,7 +2167,7 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 <section id="comparison-of-regression-coefficients" class="level4">
 <h4 class="anchored" data-anchor-id="comparison-of-regression-coefficients">Comparison of regression coefficients</h4>
 <p>Finally, we can compare the regression coefficients from both models.</p>
-<div id="70" class="cell" data-execution_count="35">
+<div id="70" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Display, for each variable, the absolute value of its coefficient in the model</span></span>
 <span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>num_features <span class="op">=</span> X.shape[<span class="dv">1</span>]</span>
 <span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>plt.scatter(<span class="bu">range</span>(num_features), np.<span class="bu">abs</span>(predictor.coef_), label<span class="op">=</span><span class="st">'Original'</span>)</span>
@@ -2173,11 +2179,20 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 <span id="cb42-9"><a href="#cb42-9" aria-hidden="true" tabindex="-1"></a>tmp <span class="op">=</span> plt.ylabel(<span class="st">'Coefficient'</span>)</span>
 <span id="cb42-10"><a href="#cb42-10" aria-hidden="true" tabindex="-1"></a>plt.legend(loc<span class="op">=</span>(<span class="fl">0.02</span>, <span class="fl">0.75</span>))</span>
 <span id="cb42-11"><a href="#cb42-11" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="1-Intro_solved_files/figure-html/cell-35-output-1.png" class="img-fluid figure-img"></p>
-</figure>
+</div>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Click for figure">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Click for figure
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><img src="../imgs/scaled_baseline_coefficients_mpg.png" class="img-fluid"></p>
 </div>
 </div>
 </div>
@@ -2194,7 +2209,7 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 </div>
 <p><strong>Question:</strong> Which variables are now the most relevant to predict a vehicle’s consumption ? Does it seem sensible ?</p>
 <div class="callout callout-style-simple callout-note no-icon callout-titled" title="Click for answer">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -2203,7 +2218,7 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>After scaling the variables, we can now more accurately compare the influence of each feature on the prediction of vehicle consumption, as shown in the ‘Scaled’ coefficients plot in cell 70. The variables with the highest absolute coefficients are:</p>
 <ol type="1">
@@ -2791,7 +2806,7 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 </div>
 <p><strong>Question:</strong> Compare it to the previous RMSE.</p>
 <div class="callout callout-style-simple callout-note no-icon callout-titled" title="Click for answer">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -2800,7 +2815,7 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Comparing the RMSE for the one-hot encoded model (<code>3.27</code>) to the previous RMSE (from the scaled data model, <code>3.29</code>), we observe a slight improvement.</p>
 <p>This small reduction in RMSE indicates that representing the <code>origin</code> variable using one-hot encoding provides a slightly better fit for the linear regression model than treating it as a continuous numerical variable. By converting the categorical <code>origin</code> feature into a set of binary features, the model can capture the distinct effect of each origin category more accurately, leading to a marginal improvement in predictive performance.</p>
@@ -2810,7 +2825,7 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 <section id="comparison-to-previous-predictions" class="level4">
 <h4 class="anchored" data-anchor-id="comparison-to-previous-predictions">Comparison to previous predictions</h4>
 <p>Are the performances really different ? We can compare the predictions directly:</p>
-<div id="91" class="cell" data-execution_count="44">
+<div id="91" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">5</span>, <span class="dv">5</span>))</span>
 <span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a>plt.scatter(y_pred, y_pred_dummy)</span>
 <span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -2827,11 +2842,20 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 <span id="cb54-14"><a href="#cb54-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Diagonal y=x</span></span>
 <span id="cb54-15"><a href="#cb54-15" aria-hidden="true" tabindex="-1"></a>plt.plot([axis_min, axis_max], [axis_min, axis_max], <span class="st">'k-'</span>)</span>
 <span id="cb54-16"><a href="#cb54-16" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="1-Intro_solved_files/figure-html/cell-44-output-1.png" class="img-fluid figure-img"></p>
-</figure>
+</div>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Click for figure">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Click for figure
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><img src="../imgs/onehot_baseline_predictions_mpg.png" class="img-fluid"></p>
 </div>
 </div>
 </div>
@@ -2850,7 +2874,7 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 <section id="comparison-of-the-regression-coefficients" class="level4">
 <h4 class="anchored" data-anchor-id="comparison-of-the-regression-coefficients">Comparison of the regression coefficients</h4>
 <p>Let’s now compare visually the two models:</p>
-<div id="96" class="cell" data-execution_count="47">
+<div id="96" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb58"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Display for each variable, the absolute value of its coefficient in the model</span></span>
 <span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a>num_features <span class="op">=</span> X.shape[<span class="dv">1</span>]</span>
 <span id="cb58-3"><a href="#cb58-3" aria-hidden="true" tabindex="-1"></a>plt.scatter(<span class="bu">range</span>(num_features), np.<span class="bu">abs</span>(predictor_scaled.coef_), label<span class="op">=</span><span class="st">'Scaled'</span>)</span>
@@ -2865,11 +2889,20 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 <span id="cb58-12"><a href="#cb58-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb58-13"><a href="#cb58-13" aria-hidden="true" tabindex="-1"></a>plt.legend(loc<span class="op">=</span>(<span class="fl">0.02</span>, <span class="fl">0.75</span>))</span>
 <span id="cb58-14"><a href="#cb58-14" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="1-Intro_solved_files/figure-html/cell-47-output-1.png" class="img-fluid figure-img"></p>
-</figure>
+</div>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Click for figure">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Click for figure
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><img src="../imgs/onehot_scaled_coefficients_mpg.png" class="img-fluid"></p>
 </div>
 </div>
 </div>
