@@ -564,13 +564,13 @@ auto-mpg.tsv        100%[===================&gt;]  17.07K  --.-KB/s    in 0.001s
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'mpg'</span>)</span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Show figure">
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Click for figure">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Show figure
+<span class="screen-reader-only">Note</span>Click for figure
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -1070,7 +1070,7 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 <section id="visualization" class="level3">
 <h3 class="anchored" data-anchor-id="visualization">Visualization</h3>
 <p>We can also use a visual, and represent each individual from the test set by its predicted label vs.its true label.</p>
-<div id="39" class="cell" data-execution_count="21">
+<div id="39" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">5</span>, <span class="dv">5</span>))</span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>plt.scatter(y, y_pred)</span>
 <span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -1087,11 +1087,20 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 <span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Diagonal y=x</span></span>
 <span id="cb25-15"><a href="#cb25-15" aria-hidden="true" tabindex="-1"></a>plt.plot([axis_min, axis_max], [axis_min, axis_max], <span class="st">'k-'</span>)</span>
 <span id="cb25-16"><a href="#cb25-16" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="1-Intro_solved_files/figure-html/cell-21-output-1.png" class="img-fluid figure-img"></p>
-</figure>
+</div>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Click for figure">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Click for figure
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><img src="../imgs/initial_linear_regression_mpg.png" class="img-fluid"></p>
 </div>
 </div>
 </div>
@@ -1119,7 +1128,7 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 </div>
 <p><strong>Question:</strong> Which variable has the highest coefficient (in absolute value) ? Do you think that it means this variable plays a very important part in the prediction ?</p>
 <div class="callout callout-style-simple callout-note no-icon callout-titled" title="Click for answer">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -1128,7 +1137,7 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>The variable with the highest coefficient in absolute value is <strong><code>origin</code></strong>.</p>
 <p>Regarding whether this means <code>origin</code> plays a very important part in the prediction:</p>
@@ -2185,7 +2194,7 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 </div>
 <p><strong>Question:</strong> Which variables are now the most relevant to predict a vehicle’s consumption ? Does it seem sensible ?</p>
 <div class="callout callout-style-simple callout-note no-icon callout-titled" title="Click for answer">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -2194,7 +2203,7 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>After scaling the variables, we can now more accurately compare the influence of each feature on the prediction of vehicle consumption, as shown in the ‘Scaled’ coefficients plot in cell 70. The variables with the highest absolute coefficients are:</p>
 <ol type="1">
@@ -2782,7 +2791,7 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 </div>
 <p><strong>Question:</strong> Compare it to the previous RMSE.</p>
 <div class="callout callout-style-simple callout-note no-icon callout-titled" title="Click for answer">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -2791,7 +2800,7 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Comparing the RMSE for the one-hot encoded model (<code>3.27</code>) to the previous RMSE (from the scaled data model, <code>3.29</code>), we observe a slight improvement.</p>
 <p>This small reduction in RMSE indicates that representing the <code>origin</code> variable using one-hot encoding provides a slightly better fit for the linear regression model than treating it as a continuous numerical variable. By converting the categorical <code>origin</code> feature into a set of binary features, the model can capture the distinct effect of each origin category more accurately, leading to a marginal improvement in predictive performance.</p>
