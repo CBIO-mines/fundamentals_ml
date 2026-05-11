@@ -102,7 +102,7 @@
     "href": "index.html#content",
     "title": "Fundamentals of Machine Learning",
     "section": "Content",
-    "text": "Content\n\nPractical 1: getting started with scikit-learn\nPractical 2: model selection, regularization\nPractical 3: dimension reduction and clustering\nPractical 4: trees and ensemble models\nPractical 5: training neural networks"
+    "text": "Content\n\nPractical 1: getting started with scikit-learn -  or Download\nPractical 2: model selection, regularization\nPractical 3: dimension reduction and clustering\nPractical 4: trees and ensemble models\nPractical 5: training neural networks"
   },
   {
     "objectID": "index.html#advanced-use-git-and-nbstripout",
