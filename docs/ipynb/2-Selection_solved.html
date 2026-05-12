@@ -280,7 +280,12 @@ window.Quarto = {
 
 
 <p>Notebook prepared by <a href="http://cazencott.info">Chloé-Agathe Azencott</a> with the help of <a href="https://github.com/Henley13">Arthur Imbert</a> and contributions from <a href="https://www.giannkarlo.info/">Giann Karlo</a>.</p>
-<p>In this notebook it is * evaluate a model on a test set * to choose the value of a hyperparameter of a learning algorithm * to understand the interest of polynomial regression and regularization</p>
+<p>The goals of this notebook will be:</p>
+<ul>
+<li>to evaluate a model on a test set.</li>
+<li>to choose the value of a hyperparameter of a learning algorithm.</li>
+<li>to understand the interest of polynomial regression and regularization.</li>
+</ul>
 <div id="79209869" class="cell" data-execution_count="283">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># load numpy as np, matplotlib as plt</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
@@ -735,6 +740,13 @@ abalone.csv.4       100%[===================&gt;] 187.46K  --.-KB/s    in 0.02s
 </div>
 </div>
 </div>
+</section>
+<section id="transformation-into-a-binary-classification-problem" class="level3">
+<h3 class="anchored" data-anchor-id="transformation-into-a-binary-classification-problem">Transformation into a binary classification problem</h3>
+<p>We will try to classify the older and younger abalones (score &gt;= 10).</p>
+<div id="e0b797d9" class="cell" data-execution_count="361">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> np.where(y <span class="op">&gt;=</span> <span class="dv">10</span>, <span class="dv">1</span>, <span class="dv">0</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 <p><strong>Question:</strong> What do you think about using linear regression to solve this problem?</p>
 <div class="callout callout-style-simple callout-note no-icon callout-titled" title="Click for answer">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
@@ -751,13 +763,6 @@ abalone.csv.4       100%[===================&gt;] 187.46K  --.-KB/s    in 0.02s
 <p>Given that the problem has been transformed into a binary classification problem (older vs.&nbsp;younger abalones), linear regression is not the most appropriate model. Linear regression is designed for predicting continuous outcomes, while classification tasks require models that can predict categorical outcomes (e.g., 0 or 1). For classification problems, models like logistic regression or k-Nearest Neighbors (which are explored later in this notebook) are generally more suitable.</p>
 </div>
 </div>
-</div>
-</section>
-<section id="transformation-into-a-binary-classification-problem" class="level3">
-<h3 class="anchored" data-anchor-id="transformation-into-a-binary-classification-problem">Transformation into a binary classification problem</h3>
-<p>We will try to classify the older and younger abalones (score &gt;= 10).</p>
-<div id="e0b797d9" class="cell" data-execution_count="361">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> np.where(y <span class="op">&gt;=</span> <span class="dv">10</span>, <span class="dv">1</span>, <span class="dv">0</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 </section>
