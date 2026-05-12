@@ -24,7 +24,7 @@ To use the same libraries, you can make use of the `package_list.yml` file:
 
 ## Content
 * [Practical 1](ipynb/1-Intro_solved.ipynb): getting started with `scikit-learn` - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/giannkas/fundamentals_ml/blob/main/notebooks/1_Intro.ipynb) or{{< downloadthis notebooks/1_Intro.ipynb dname="1_Intro" type="link" >}}
-* Practical 2: model selection, regularization
+* [Practical 2](ipynb/2-Selection_solved.ipynb): model selection, regularization
 * Practical 3: dimension reduction and clustering
 * Practical 4: trees and ensemble models
 * Practical 5: training neural networks
