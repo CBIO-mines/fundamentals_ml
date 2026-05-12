@@ -9,6 +9,7 @@ project:
 
 website:
   title: "Fundamentals of Machine Learning"
+  favicon: assets/mines_logo.png
   search: true
   page-navigation: true
   navbar:
