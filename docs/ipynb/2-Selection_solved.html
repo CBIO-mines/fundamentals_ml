@@ -5108,7 +5108,13 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 </section>
 <section id="conclusion" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>We reached the end of this notebook. Here is a summary of what we have covered, with the key takeaways: - We used the <code>scikit-learn</code> library to classify the age of abalone (or the quality of wine) based on continuous variables (characteristics of the abalone or wine). - We tried a first classifier model: <a href="https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html">KNeighborsClassifier</a> (after data scaling). - We evaluated the model perfomance based on a confusion matrix, and using the F1 score, which balances both <strong>precision</strong> and <strong>recall</strong>. - We used cross-validation and grid search to find the best F1 score by testing a range of numbers representing neighbors. <strong>Cross-validation</strong> allows to assess how well a model generalizes to unseen data by splitting the dataset into multiple subsets. <strong>Grid search</strong> enables hyperparameter optimization by systematically testing combinations or range of different values for hyperparameters, such as the number of neighbors.</p>
+<p>We reached the end of this notebook. Here is a summary of what we have covered, with the key takeaways:</p>
+<ul>
+<li>We used the <code>scikit-learn</code> library to classify the age of abalone (or the quality of wine) based on continuous variables (characteristics of the abalone or wine).</li>
+<li>We tried a first classifier model: <a href="https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html">KNeighborsClassifier</a> (after data scaling).</li>
+<li>We evaluated the model perfomance based on a confusion matrix, and using the F1 score, which balances both <strong>precision</strong> and <strong>recall</strong>.</li>
+<li>We used cross-validation and grid search to find the best F1 score by testing a range of numbers representing neighbors. <strong>Cross-validation</strong> allows to assess how well a model generalizes to unseen data by splitting the dataset into multiple subsets. <strong>Grid search</strong> enables hyperparameter optimization by systematically testing combinations or range of different values for hyperparameters, such as the number of neighbors.</li>
+</ul>
 <p>We manually performed a grid search on the effects of regularization by testing the hyperparameter <code>C</code>, remember, the larger <code>C</code> is, the less the is regularization. Finally, we explored ridge regularization on polynomial regression. We saw how a polynomial function of degree 15 can overfit the <em>ground truth</em>, but after applying a reguarization technique (ridge or lasso), there is a better fit.</p>
 
 
