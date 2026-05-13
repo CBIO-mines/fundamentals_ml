@@ -1473,7 +1473,12 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 <h3 class="anchored" data-anchor-id="tsne">tSNE</h3>
 <p>Let’s try another dimension reduction method to better separate our classes.</p>
 <p>We will use the same approach as for PCA, but with the tSNE algorithm, thanks to the <a href="https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html">TSNE</a> class of the <code>manifold</code> module.</p>
-<p>Now it’s your turn to: - create the <code>tsne</code> object from the class cited above. Here we want to reduce our dataset to two dimensions in order to visualize it. - assign the information of our dataset to this object - transform our data to obtain new coordinates in two dimensions</p>
+<p>Now it’s your turn to:</p>
+<ul>
+<li>create the <code>tsne</code> object from the class cited above. Here we want to reduce our dataset to two dimensions in order to visualize it.</li>
+<li>assign the information of our dataset to this object</li>
+<li>transform our data to obtain new coordinates in two dimensions</li>
+</ul>
 <div id="71" class="cell" data-execution_count="134">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn <span class="im">import</span> manifold</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
@@ -1627,7 +1632,15 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 V = \sum_{k = 1}^{K} \sum_{x \in C_k} \frac{1}{|C_k|} (\|x - \mu_k\|^2)
 \end{align}\]</span></p>
 <p><strong>Manual implementation</strong></p>
-<p>We’ll start by implementing the algorithm “by hand”, step by step, to fully understand and visualize what the algorithm does. We will then see how to use directly the K-means implementation in the <code>sklearn</code> library. The different steps of the algorithm are: 1. Select the number <code>k</code> of clusters (hyperparameter) 2. Initialize the <code>k</code> centroids at random among our data points 3. Compute the distances from all data points to these centroids 4. Assign each point to the cluster of the closest centroid 5. Compute the position of the new centroids 6. Repeat steps 3 to 5 until convergence, i.e.&nbsp;until the centroids no longer change from one iteration to the next</p>
+<p>We’ll start by implementing the algorithm “by hand”, step by step, to fully understand and visualize what the algorithm does. We will then see how to use directly the K-means implementation in the <code>sklearn</code> library. The different steps of the algorithm are:</p>
+<ol type="1">
+<li>Select the number <code>k</code> of clusters (hyperparameter)</li>
+<li>Initialize the <code>k</code> centroids at random among our data points</li>
+<li>Compute the distances from all data points to these centroids</li>
+<li>Assign each point to the cluster of the closest centroid</li>
+<li>Compute the position of the new centroids</li>
+<li>Repeat steps 3 to 5 until convergence, i.e.&nbsp;until the centroids no longer change from one iteration to the next</li>
+</ol>
 <p>We will implement this algorithm on the 4 blobs dataset, starting with the choice of <code>k</code> and with the random selection of <code>k</code> points from our dataset that will constitute the initial centroids:</p>
 <div id="90" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}}" data-outputid="d255f957-356b-48e2-bed9-f67763f1d9bf" data-execution_count="144">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">23</span>)  <span class="co"># set seed. Important for k-means step by step visualisation. With other seeds, it's not as clear how the algorithm works.</span></span>
@@ -1782,7 +1795,12 @@ Centroid 3   0.7400184315424295 2.3987055841506097  14.158075744365863  13.46117
 </div>
 </div>
 </div>
-<p>We now repeat the different steps: - computation of distances to centroids, - assignment of clusters to data points, - computation of new centroids</p>
+<p>We now repeat the different steps:</p>
+<ul>
+<li>computation of distances to centroids,</li>
+<li>assignment of clusters to data points,</li>
+<li>computation of new centroids</li>
+</ul>
 <div id="103" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:357}}" data-outputid="6060d2d1-7e27-4fce-f0d7-a53db94529e3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb60"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">5</span>, figsize<span class="op">=</span>(<span class="dv">24</span>, <span class="dv">4</span>))</span>
 <span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a>n_iter <span class="op">=</span> <span class="dv">10</span>  <span class="co"># Number of iterations of the algorithm</span></span>
@@ -2328,7 +2346,12 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 </div>
 </div>
 </div>
-<p><strong>Questions:</strong> - Is it the expected clustering ? - In which case(s) does the k-means algorithm work correctly ? - Why doesn’t it work in the other case(s) ?</p>
+<p><strong>Questions:</strong></p>
+<ul>
+<li>Is it the expected clustering ?</li>
+<li>In which case(s) does the k-means algorithm work correctly ?</li>
+<li>Why doesn’t it work in the other case(s) ?</li>
+</ul>
 <div class="callout callout-style-simple callout-note no-icon callout-titled" title="Click for answer">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-28-contents" aria-controls="callout-28" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -2372,7 +2395,11 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 <p><span class="math display">\[\begin{align}
 \text{score} = \frac{b - a}{\max(a, b)}
 \end{align}\]</span></p>
-<p>with (for each sample): - <span class="math inline">\(a\)</span> the average intra-cluster distance - <span class="math inline">\(b\)</span> the average nearest-cluster distance</p>
+<p>with (for each sample):</p>
+<ul>
+<li><span class="math inline">\(a\)</span> the average intra-cluster distance</li>
+<li><span class="math inline">\(b\)</span> the average nearest-cluster distance</li>
+</ul>
 <p>The score is computed for each observation (with a value between -1 (worst) and 1 (best)), then the average score enables to assess the clustering on the whole point cloud at once.</p>
 <p>Documentation: https://scikit-learn.org/stable/modules/generated/sklearn.metrics.silhouette_score.html#sklearn.metrics.silhouette_score</p>
 <div id="115" class="cell" data-execution_count="156">
@@ -2452,15 +2479,27 @@ Circles: Silhouette coefficient for  k-means (k=2) : 0.35</code></pre>
 </div>
 </div>
 </div>
-<p><strong>Conclusions:</strong> - The k-means algorithm provides a satisfactory clustering for the dataset with four well-separated blobs, even without knowing the ideal number of clusters in advance, in which case the silhouette coefficient allows to find this ideal number. - However, despite optimizing the silhouette score, this algorithm does not provide good results for the other datasets, whether for the two nested moons or the two concentric circles.</p>
+<p><strong>Conclusions:</strong></p>
+<ul>
+<li>The k-means algorithm provides a satisfactory clustering for the dataset with four well-separated blobs, even without knowing the ideal number of clusters in advance, in which case the silhouette coefficient allows to find this ideal number.</li>
+<li>However, despite optimizing the silhouette score, this algorithm does not provide good results for the other datasets, whether for the two nested moons or the two concentric circles.</li>
+</ul>
 <p>We will therefore now try another clustering algorithm and test its performance to compare it to k-means. We will limit ourselves to the two datasets for which the k-means algorithm does not work.</p>
 </section>
 </section>
 <section id="dbscan-density-based-clustering" class="level3">
 <h3 class="anchored" data-anchor-id="dbscan-density-based-clustering">DBSCAN (Density-based clustering)</h3>
-<p>The DBSCAN (Density-Based Spatial Clustering of Applications with Noise) algorithm works in two steps: - All sufficiently close observations are connected to each other. - Observations with a minimum number of connected neighbors are considered <em>core samples</em>, from which the clusters are expanded. <strong>All observations sufficiently close to a <em>core sample</em> belong to the same cluster as this one</strong>.</p>
+<p>The DBSCAN (Density-Based Spatial Clustering of Applications with Noise) algorithm works in two steps:</p>
+<ul>
+<li>All sufficiently close observations are connected to each other.</li>
+<li>Observations with a minimum number of connected neighbors are considered <em>core samples</em>, from which the clusters are expanded. <strong>All observations sufficiently close to a <em>core sample</em> belong to the same cluster as this one</strong>.</li>
+</ul>
 <p>Documentation: https://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html</p>
-<p>The DBSCAN algorithm takes two hyperparameters as input: - <code>eps</code>: the <em>size of the neighborhood</em>, in other words, the distance between two data points below which one point is considered inside the neighborhood of the other. - <code>min_samples</code>: the minimum number of neighbors for a data point to be considered a <em>core sample</em>.</p>
+<p>The DBSCAN algorithm takes two hyperparameters as input:</p>
+<ul>
+<li><code>eps</code>: the <em>size of the neighborhood</em>, in other words, the distance between two data points below which one point is considered inside the neighborhood of the other.</li>
+<li><code>min_samples</code>: the minimum number of neighbors for a data point to be considered a <em>core sample</em>.</li>
+</ul>
 <div id="122" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:80}}" data-outputid="ea082aba-950d-4490-8f25-25befbba2807" data-execution_count="159">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb70"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="co">### START OF YOUR CODE</span></span>
 <span id="cb70-2"><a href="#cb70-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -3530,7 +3569,11 @@ Corresponding eps: 0.03</code></pre>
 </div>
 </div>
 </div>
-<p><strong>Question:</strong> - What is the problem here ? - Is the silhouette coefficient adapted to our dataset ?</p>
+<p><strong>Question:</strong></p>
+<ul>
+<li>What is the problem here ?</li>
+<li>Is the silhouette coefficient adapted to our dataset ?</li>
+</ul>
 <div class="callout callout-style-simple callout-note no-icon callout-titled" title="Click for answer">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-36-contents" aria-controls="callout-36" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
