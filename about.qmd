@@ -2,7 +2,7 @@
 title: "About"
 ---
 
-This course is designed to provide a comprehensive introduction to machine learning, covering fundamental concepts, algorithms, and practical applications. The course is structured to include both theoretical lectures and hands-on practical sessions, allowing participants to gain a solid understanding of machine learning principles and how to apply them to real-world problems. The curriculum includes topics such as supervised and unsupervised learning, model selection, regularization, ensemble methods, and deep learning, with a focus on using Python and popular libraries like scikit-learn and PyTorch.
+This course is designed to provide an introduction to machine learning, covering fundamental concepts, algorithms, and practical applications. The course is structured to include both theoretical lectures and hands-on practical sessions, allowing participants to gain a solid understanding of machine learning principles and how to apply them to real-world problems. The curriculum includes topics such as supervised and unsupervised learning, model selection, regularization, ensemble methods, and deep learning, with a focus on using Python and popular libraries like scikit-learn and PyTorch.
 
 ## Teachers
 

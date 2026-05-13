@@ -8,7 +8,7 @@ title: "Course schedule"
 |---------	|----------	|----------	|--------------------------------	|
 | May 11 	| 10:15 AM  	| 11:45 AM 	| [Getting familiar with scikit-learn](ipynb/1-Intro_solved.ipynb) |
 | May 12 	| 10:15 AM  	| 11:45 AM 	| [Model selection and evaluation](ipynb/2-Selection_solved.ipynb) |
-| May 13 	| 10:15 AM  	| 11:45 AM 	| Unsupervised learning |
+| May 13 	| 10:15 AM  	| 11:45 AM 	| [Unsupervised learning](ipynb/3-Unsupervised_solved.ipynb) |
 
 ## Week 2
 
