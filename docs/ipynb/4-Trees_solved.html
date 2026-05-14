@@ -664,7 +664,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p><strong>Question:</strong> How many samples (examples) does our dataset contain? How many variables?</p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Click for answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Click for answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p>Our dataset contains <strong>8124 samples (examples)</strong> and <strong>22 variables</strong> (features) in <code>X</code>, and the target variable <code>y</code> has <strong>8124 samples</strong>.</p>
+</div>
+</div>
+</div>
 </section>
 </section>
 <section id="selection-and-evaluation-framework" class="level2">
@@ -725,7 +740,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p><strong>Question:</strong> What do you think of this performance?</p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Click for answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Click for answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p>The default Decision Tree achieved an F1 score of approximately <strong>0.878 +/- 0.014</strong> in cross-validation. This indicates a reasonably good performance, but there might be room for improvement by optimizing its hyperparameters, especially its depth, to prevent overfitting or underfitting.</p>
+</div>
+</div>
+</div>
 </section>
 <section id="cross-validation-of-decision-tree-depth" class="level3">
 <h3 class="anchored" data-anchor-id="cross-validation-of-decision-tree-depth">Cross-validation of decision tree depth</h3>
@@ -1895,7 +1925,22 @@ forceTheme('sk-container-id-1');</script>
 </div>
 </div>
 <p><strong>Question:</strong> What do you think of this performance?</p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Click for answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Click for answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p>The cross-validation results show that optimizing the <code>max_depth</code> hyperparameter significantly improves the Decision Tree’s performance. The optimal <code>max_depth</code> is <strong>6</strong>, which yields a best F1 score of approximately <strong>0.94</strong>. This is a substantial improvement over the default Decision Tree’s F1 score of 0.878. The plot illustrates that performance generally increases with depth up to a certain point, after which it plateaus or slightly decreases, indicating a good balance between bias and variance is achieved at <code>max_depth=6</code>.</p>
+</div>
+</div>
+</div>
 </section>
 <section id="optimal-decision-tree" class="level3">
 <h3 class="anchored" data-anchor-id="optimal-decision-tree">Optimal decision tree</h3>
@@ -1929,7 +1974,22 @@ forceTheme('sk-container-id-1');</script>
 </div>
 </div>
 <p><strong>Question:</strong> Does the learned model seem interpretable to you?</p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Click for answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Click for answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p>The learned model, with an optimal <code>max_depth</code> of 6, is somewhat interpretable. While it’s not a trivial tree with only a few nodes, a depth of 6 allows for a good balance between predictive power and the ability to trace the decision rules. An expert could follow the path from the root to a leaf node to understand why a particular mushroom is classified as edible or poisonous. However, for a non-expert, visualizing all 6 levels of decisions might still require some effort to fully grasp without a more simplified representation.</p>
+</div>
+</div>
+</div>
 </section>
 <section id="variable-importance" class="level3">
 <h3 class="anchored" data-anchor-id="variable-importance">Variable Importance</h3>
@@ -3128,7 +3188,22 @@ forceTheme('sk-container-id-2');</script>
 </div>
 </div>
 <p><strong>Question:</strong> Compare this performance to that of the decision tree.</p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Click for answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Click for answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p>The Logistic Regression model achieved a best F1 score of approximately <strong>0.902</strong> in cross-validation. When compared to the optimal Decision Tree, which had an F1 score of <strong>0.946</strong>, the Logistic Regression performs noticeably worse. This suggests that for this dataset, a model capable of capturing non-linear relationships (like a Decision Tree) is more effective than a linear model.</p>
+</div>
+</div>
+</div>
 <div id="cell-61" class="cell toggleable-cell output-sync-off initially-hidden" data-execution_count="29">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb38" data-toggle-id="toggle-28-1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">6</span>))</span>
 <span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -3178,11 +3253,26 @@ forceTheme('sk-container-id-2');</script>
 </div>
 </div>
 <p><strong>Question:</strong> How do these importances compare?</p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Click for answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Click for answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p>Comparing the variable importances across the two models reveals some patterns:</p>
 <ul>
 <li><p><strong>Decision Tree:</strong> The single Decision Tree (even the optimal one) tends to focus heavily on a very few key features, such as ‘gill-color’ and ‘spore-print-color’. This is characteristic of decision trees, as they greedily select the most informative features at each split. Other features might be used but contribute less to the overall importance.</p></li>
 <li><p><strong>Logistic Regression:</strong> Logistic Regression, being a linear model, assigns weights (coefficients) to all features based on their linear contribution to the prediction. We observe that ‘gill-spacing’, ‘gill-size’, ‘stalk-surface-above-ring’, and ‘veil-color’ appear to have higher importance. These importances are based on how strongly and linearly each feature correlates with the target variable.</p></li>
 </ul>
+</div>
+</div>
+</div>
 </section>
 </section>
 <section id="random-forest" class="level2">
@@ -4424,7 +4514,22 @@ forceTheme('sk-container-id-3');</script>
 </div>
 </div>
 <p><strong>Question:</strong> How does the performance of random forests compare to previous performances?</p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Click for answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Click for answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p>The Random Forest model achieved a best F1 score of approximately <strong>0.95</strong> in cross-validation. This performance is slightly better than the optimal Decision Tree (F1 score of 0.946) and much better than the Logistic Regression model (F1 score of 0.902). This demonstrates that ensemble methods like Random Forests can effectively improve predictive performance by combining multiple decision trees, reducing overfitting, and possibly enhancing generalization capabilities.</p>
+</div>
+</div>
+</div>
 </section>
 <section id="optimal-random-forest" class="level3">
 <h3 class="anchored" data-anchor-id="optimal-random-forest">Optimal random forest</h3>
@@ -4501,6 +4606,18 @@ forceTheme('sk-container-id-3');</script>
 </div>
 </div>
 <p><strong>Question:</strong> What are the most important variables now? How does this compare to previous models?</p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Click for answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Click for answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p>For the Random Forest model, the most important variables are:</p>
 <ul>
 <li><strong>Odor</strong></li>
@@ -4517,6 +4634,9 @@ forceTheme('sk-container-id-3');</script>
 <li><strong>Logistic Regression:</strong> This model showed higher importance for ‘gill-spacing’, ‘gill-size’, ‘stalk-surface-above-ring’, and ‘veil-color’. ‘Gill-size’ also appears as an important feature in the Random Forest.</li>
 </ul>
 <p>In general, the Random Forest tends to utilize a wider array of features compared to a single Decision Tree, indicating that the ensemble approach leverages more diverse information to make predictions. ‘Odor’ emerges as a particularly strong predictor for the Random Forest, highlighting its significance in distinguishing edible from poisonous mushrooms.</p>
+</div>
+</div>
+</div>
 </section>
 </section>
 <section id="gradient-boosting" class="level2">
@@ -5753,6 +5873,18 @@ forceTheme('sk-container-id-4');</script>
 </div>
 </div>
 <p><strong>Question:</strong> How does the performance of gradient boosting evolve based on hyperparameter values? How does it compare to previous performances?</p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Click for answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Click for answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p>The cross-validation results for Gradient Boosting show that the F1 score generally improves with an increasing number of estimators (<code>n_estimators</code>) and higher <code>max_depth</code> up to a certain point. The optimal hyperparameters found are <code>max_depth=4</code> and <code>n_estimators=100</code>. Beyond these values, the performance tends to plateau or slightly decrease, indicating that adding more estimators or increasing depth further does not yield significant improvements and could lead to overfitting.</p>
 <p>Comparing its performance to previous models:</p>
 <ul>
@@ -5760,6 +5892,9 @@ forceTheme('sk-container-id-4');</script>
 <li><strong>Logistic Regression:</strong> Gradient Boosting significantly outperforms Logistic Regression (F1 score of 0.902).</li>
 <li><strong>Random Forest:</strong> The performance of Gradient Boosting (0.949 F1) is very similar to that of the optimal Random Forest model (0.95 F1). Both ensemble methods demonstrate superior performance compared to a single Decision Tree and Logistic Regression, showcasing the benefits of combining multiple weaker models.</li>
 </ul>
+</div>
+</div>
+</div>
 </section>
 <section id="optimal-boosting" class="level3">
 <h3 class="anchored" data-anchor-id="optimal-boosting">Optimal Boosting</h3>
@@ -5849,6 +5984,18 @@ forceTheme('sk-container-id-4');</script>
 </div>
 </div>
 <p><strong>Question:</strong> What are the most important variables now? How does this compare to previous models?</p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Click for answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Click for answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p>For the Gradient Boosting model, the most important variables are:</p>
 <ul>
 <li><strong>Odor</strong></li>
@@ -5863,6 +6010,9 @@ forceTheme('sk-container-id-4');</script>
 <li><strong>Logistic Regression:</strong> While ‘gill-size’, ‘gill-spacing’, ‘stalk-surface-above-ring’ and ‘veil-color’ are important for Logistic Regression, Gradient Boosting places less emphasis on features like ‘gill-spacing’, ‘stalk-surface-above-ring’, and ‘veil-color’.</li>
 <li><strong>Random Forest:</strong> The variable importances for Gradient Boosting are similar to those of the Random Forest. Both ensemble methods identify ‘odor’, ‘gill-size’, ‘gill-color’, ‘spore-print-color’ and ‘population’ as the most dominant features. Nevertheless, Random Forest highlights other features to achieve the same performance as gradient boosting.</li>
 </ul>
+</div>
+</div>
+</div>
 </section>
 </section>
 <section id="final-model" class="level2">
@@ -5885,8 +6035,23 @@ forceTheme('sk-container-id-4');</script>
 </div>
 </div>
 <p><strong>Question:</strong> What do you think of this performance? Is there a risk of overfitting?</p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Click for answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Click for answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p>The chosen model, Gradient Boosting, achieved an F1 score of <strong>0.948</strong> on the test set. This performance is very close to its cross-validation F1 score of <strong>0.949</strong>.</p>
 <p>This strong and consistent performance indicates that the model is generalizing well to unseen data, and there appears to be <strong>no significant risk of overfitting</strong>. The slight difference between the cross-validation score and the test set score is minimal and expected due to variations in data splits. This suggests that the hyperparameter tuning effectively balanced bias and variance, leading to a robust model.</p>
+</div>
+</div>
+</div>
 <section id="confusion-matrix" class="level3">
 <h3 class="anchored" data-anchor-id="confusion-matrix">Confusion Matrix</h3>
 <p>To better interpret the results, we can also visualize the confusion matrix:</p>
@@ -5901,6 +6066,18 @@ forceTheme('sk-container-id-4');</script>
 </div>
 </div>
 <p><strong>Question:</strong> What do you think of this confusion matrix? Is it satisfactory? Remember that we are trying to predict if a mushroom is edible.</p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Click for answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Click for answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p>A confusion matrix provides a detailed breakdown of correct and incorrect classifications for each class. In the context of mushroom classification, where misclassifying a poisonous mushroom as edible can have severe consequences, the focus is heavily on minimizing false negatives.</p>
 <p>From the confusion matrix generated (which should show very few misclassifications given the high F1 score of 0.948):</p>
 <ul>
@@ -5911,6 +6088,9 @@ forceTheme('sk-container-id-4');</script>
 </ul>
 <p>Given the F1 score of 0.948, the model demonstrates high precision and recall, implying that both false positives and false negatives are low. However, for a task like this, even a single false negative can be catastrophic. Therefore, to deem it ‘satisfactory’, we would ideally want <strong>zero</strong> false negatives. If the confusion matrix shows a small number of false negatives, it means there’s still a risk, and further efforts would be needed to eliminate them, even at the cost of increasing false positives (predicting some edible mushrooms as poisonous).</p>
 <p>In summary, while the overall performance is excellent, the absolute count of false negatives is the most critical metric for safety. If it’s not zero, the model is not entirely satisfactory from a safety perspective, though it’s remarkably good for machine learning standards.</p>
+</div>
+</div>
+</div>
 </section>
 <section id="roc-curve" class="level3">
 <h3 class="anchored" data-anchor-id="roc-curve">ROC Curve</h3>
