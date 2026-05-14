@@ -25,14 +25,15 @@ website:
   sidebar: 
     logo: assets/mines_paris_psl_logo.png
 
+toc: true
+
 format:
   html:
     code-link: true
     theme:
       - cosmo
       - brand
-      - styles.scss
-    toc: true
+      - styles.scss  
 
 execute:
   enable: true

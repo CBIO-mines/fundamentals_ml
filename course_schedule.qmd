@@ -14,7 +14,7 @@ title: "Course schedule"
 
 | block   	| start    	| end      	| subject                        	|
 |---------	|----------	|----------	|--------------------------------	|
-| May 18 	| 10:15 AM  	| 11:45 AM 	| Trees and Ensemble Methods |
+| May 18 	| 10:15 AM  	| 11:45 AM 	| [Trees and Ensemble Methods](ipynb/4-Trees_solved.ipynb) |
 | May 19 	| To be defined  	| To be defined 	| Optimization and neural networks |
 | May 20 	| To be defined  	| To be defined 	| Deep Learning with PyTorch |
 

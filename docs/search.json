@@ -4,7 +4,7 @@
     "href": "ipynb/4-Trees_solved.html",
     "title": "Notebook 4 : Trees and Ensemble Methods",
     "section": "",
-    "text": "Notebook prepared by Chloé-Agathe Azencott and contributions from Giann Karlo.\nIn this notebook, we will discover decision trees and ensemble methods (random forests, gradient boosting).\n# load numpy as np, matplotlib as plt\n%matplotlib inline\nimport numpy as np\nimport matplotlib.pyplot as plt\nplt.rc('font', **{'size': 12}) # sets the global font size for plots (in pt)\nimport pandas as pd"
+    "text": "Download\nNotebook prepared by Chloé-Agathe Azencott and contributions from Giann Karlo.\nIn this notebook, we will discover decision trees and ensemble methods (random forests, gradient boosting).\n# load numpy as np, matplotlib as plt\n%matplotlib inline\nimport numpy as np\nimport matplotlib.pyplot as plt\nplt.rc('font', **{'size': 12}) # sets the global font size for plots (in pt)\nimport pandas as pd"
   },
   {
     "objectID": "ipynb/4-Trees_solved.html#data-loading",
@@ -67,7 +67,7 @@
     "href": "ipynb/2-Selection_solved.html",
     "title": "Notebook 2: Model selection and evaluation",
     "section": "",
-    "text": "Notebook prepared by Chloé-Agathe Azencott with the help of Arthur Imbert and contributions from Giann Karlo.\nThe goals of this notebook will be:\n# load numpy as np, matplotlib as plt\n%matplotlib inline\nimport numpy as np\nimport matplotlib.pyplot as plt\nplt.rc('font', **{'size': 12}) # sets the font size globally for the plots (in pt)\nimport pandas as pd"
+    "text": "Download\nNotebook prepared by Chloé-Agathe Azencott with the help of Arthur Imbert and contributions from Giann Karlo.\nThe goals of this notebook will be:\n# load numpy as np, matplotlib as plt\n%matplotlib inline\nimport numpy as np\nimport matplotlib.pyplot as plt\nplt.rc('font', **{'size': 12}) # sets the font size globally for the plots (in pt)\nimport pandas as pd"
   },
   {
     "objectID": "ipynb/2-Selection_solved.html#loading-data",
@@ -179,14 +179,14 @@
     "href": "course_schedule.html#week-2",
     "title": "Course schedule",
     "section": "Week 2",
-    "text": "Week 2\n\n\n\n\n\n\n\n\n\nblock\nstart\nend\nsubject\n\n\n\n\nMay 18\n10:15 AM\n11:45 AM\nTrees and Ensemble Methods\n\n\nMay 19\nTo be defined\nTo be defined\nOptimization and neural networks\n\n\nMay 20\nTo be defined\nTo be defined\nDeep Learning with PyTorch"
+    "text": "Week 2\n\n\n\nblock\nstart\nend\nsubject\n\n\n\n\nMay 18\n10:15 AM\n11:45 AM\nTrees and Ensemble Methods\n\n\nMay 19\nTo be defined\nTo be defined\nOptimization and neural networks\n\n\nMay 20\nTo be defined\nTo be defined\nDeep Learning with PyTorch"
   },
   {
     "objectID": "ipynb/1-Intro_solved.html",
     "href": "ipynb/1-Intro_solved.html",
     "title": "Notebook 1 : Getting familiar with scikit-learn",
     "section": "",
-    "text": "Notebook prepared by Chloé-Agathe Azencott, modified by Victor Laigle and by Giann Karlo.\nThis notebook will allow you to discover scikit-learn functionalities to:\n# Load packages numpy, pandas and matplotlib (with aliases np, pd and plt respectively)\n%matplotlib inline \nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\nplt.rc('font', **{'size': 12}) # set the global font size for plots (in pt)"
+    "text": "Download\nNotebook prepared by Chloé-Agathe Azencott, modified by Victor Laigle and by Giann Karlo.\nThis notebook will allow you to discover scikit-learn functionalities to:\n# Load packages numpy, pandas and matplotlib (with aliases np, pd and plt respectively)\n%matplotlib inline \nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\nplt.rc('font', **{'size': 12}) # set the global font size for plots (in pt)"
   },
   {
     "objectID": "ipynb/1-Intro_solved.html#data-loading",
@@ -235,7 +235,7 @@
     "href": "ipynb/3-Unsupervised_solved.html",
     "title": "Notebook 3 : Unsupervised learning",
     "section": "",
-    "text": "Notebook prepared by Chloé-Agathe Azencott, modified by Victor Laigle.\nIn this notebook we will explore several techniques for dimension reduction and clustering.\n# Load numpy, pandas and matplotlib (with aliases np, pd and plt respectively)\n%matplotlib inline\nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\nplt.rc('font', **{'size': 12}) # set the global font size for plots (in pt)"
+    "text": "Download\nNotebook prepared by Chloé-Agathe Azencott, modified by Victor Laigle.\nIn this notebook we will explore several techniques for dimension reduction and clustering.\n# Load numpy, pandas and matplotlib (with aliases np, pd and plt respectively)\n%matplotlib inline\nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\nplt.rc('font', **{'size': 12}) # set the global font size for plots (in pt)"
   },
   {
     "objectID": "ipynb/3-Unsupervised_solved.html#principal-components-analysis-pca",
