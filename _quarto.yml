@@ -35,6 +35,7 @@ format:
     toc: true
 
 execute:
-  freeze: auto 
-  cache: true
+  enable: true
+  echo: true
+  freeze: auto
   tidy: true

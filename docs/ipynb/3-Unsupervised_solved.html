@@ -510,7 +510,11 @@ decathlon.txt.1     100%[===================&gt;]   3.50K  --.-KB/s    in 0s
 </section>
 <section id="visualization" class="level3">
 <h3 class="anchored" data-anchor-id="visualization">Visualization</h3>
-<p>A <strong>scatter matrix</strong> is a visualisation, in k x k panels, of the pairwise relations between k variables: * on the diagonal, the histogram of each variable * off-diagonal, the scatter plots between two variables (non standardized)</p>
+<p>A <strong>scatter matrix</strong> is a visualisation, in k x k panels, of the pairwise relations between k variables:</p>
+<ul>
+<li>on the diagonal, the histogram of each variable</li>
+<li>off-diagonal, the scatter plots between two variables (non standardized)</li>
+</ul>
 <p>Your job here is to display the visualization with the <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.plotting.scatter_matrix.html"><code>scatter_matrix</code></a> function:</p>
 <div id="16" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;jupyter&quot;,&quot;value&quot;:{&quot;outputs_hidden&quot;:false}}" data-outputid="ef4db49f-bbf4-4257-fd02-7e75210d0521">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pandas.plotting <span class="im">import</span> scatter_matrix</span>
@@ -634,7 +638,12 @@ decathlon.txt.1     100%[===================&gt;]   3.50K  --.-KB/s    in 0s
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn <span class="im">import</span> decomposition</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Note: We have few variables here so we can afford to calculate all the PCs.</p>
-<p>As we’ve seen in previous labs, most algorithms implemented in <code>scikit-learn</code> work as follows: * we instantiate an object, corresponding to a type of algorithm/model, with its hyperparameters (here the number of components) * we use the <code>fit</code> method to pass the data to this algorithm * the learned parameters are now accessible as attributes of this object</p>
+<p>As we’ve seen in previous labs, most algorithms implemented in <code>scikit-learn</code> work as follows:</p>
+<ul>
+<li>we instantiate an object, corresponding to a type of algorithm/model, with its hyperparameters (here the number of components)</li>
+<li>we use the <code>fit</code> method to pass the data to this algorithm</li>
+<li>the learned parameters are now accessible as attributes of this object</li>
+</ul>
 <div id="31" class="cell" data-execution_count="115">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Instantiation of a PCA object with 10 principal components</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -1271,7 +1280,12 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 </div>
 </div>
 </div>
-<p><strong>Questions:</strong> * Which variables have contributions very similar to the two principal components ? * What can we deduce from their similarity ? * How to interpret the sign of the variables’ contributions to the <em>first</em> principal component ?</p>
+<p><strong>Questions:</strong></p>
+<ul>
+<li>Which variables have contributions very similar to the two principal components ?</li>
+<li>What can we deduce from their similarity ?</li>
+<li>How to interpret the sign of the variables’ contributions to the <em>first</em> principal component ?</li>
+</ul>
 <div class="callout callout-style-simple callout-note no-icon callout-titled" title="Click for answer">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -1317,7 +1331,12 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 <div id="53" class="cell" data-execution_count="125">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> datasets.fetch_olivetti_faces()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p><strong>If you do not manage to download the data:</strong> * Go to : https://github.com/CroncLee/PCA-face-recognition/blob/master/olivetti_py3.pkz * Download the file (there is a Download button) * Use the command</p>
+<p><strong>If you do not manage to download the data:</strong></p>
+<ul>
+<li>Go to : https://github.com/CroncLee/PCA-face-recognition/blob/master/olivetti_py3.pkz</li>
+<li>Download the file (there is a Download button)</li>
+<li>Use the command</li>
+</ul>
 <pre><code>    data = datasets.fetch_olivetti_faces(data_home="&lt;PATH TO DATA&gt;")</code></pre>
 <p>Replace “PATH TO DATA” by the path of the folder where you saved the data.</p>
 <div id="55" class="cell" data-execution_count="126">
