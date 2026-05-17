@@ -137,7 +137,7 @@
     "href": "index.html#content",
     "title": "Fundamentals of Machine Learning",
     "section": "Content",
-    "text": "Content\n\nPractical 1: getting started with scikit-learn -  or Download \nPractical 2: model selection, regularization -  or Download \nPractical 3: dimension reduction and clustering -  or Download \nPractical 4: trees and ensemble models\nPractical 5: training neural networks"
+    "text": "Content\n\nPractical 1: getting started with scikit-learn -  or Download \nPractical 2: model selection, regularization -  or Download \nPractical 3: dimension reduction and clustering -  or Download \nPractical 4: trees and ensemble models -  or Download \nPractical 5: training neural networks"
   },
   {
     "objectID": "index.html#advanced-use-git-and-nbstripout",
@@ -179,7 +179,7 @@
     "href": "course_schedule.html#week-2",
     "title": "Course schedule",
     "section": "Week 2",
-    "text": "Week 2\n\n\n\nblock\nstart\nend\nsubject\n\n\n\n\nMay 18\n10:15 AM\n11:45 AM\nTrees and Ensemble Methods\n\n\nMay 19\nTo be defined\nTo be defined\nOptimization and neural networks\n\n\nMay 20\nTo be defined\nTo be defined\nDeep Learning with PyTorch"
+    "text": "Week 2\n\n\n\nblock\nstart\nend\nsubject\n\n\n\n\nMay 18\n10:15 AM\n11:45 AM\nTrees and Ensemble Methods\n\n\nMay 19\n10:15 AM\n11:45 AM\nOptimization and neural networks\n\n\nMay 20\n8:30 AM\n10:00 AM\nDeep Learning with PyTorch"
   },
   {
     "objectID": "ipynb/1-Intro_solved.html",
