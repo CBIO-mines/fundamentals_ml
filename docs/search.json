@@ -4,7 +4,7 @@
     "href": "ipynb/5-TrainingNeuralNetworks_solved.html",
     "title": "Notebook 5 - Optimization and neural networks",
     "section": "",
-    "text": "import copy\nimport matplotlib.pyplot as plt\nimport numpy as np\nimport scipy.optimize\nimport torch\nimport time"
+    "text": "Download\nimport copy\nimport matplotlib.pyplot as plt\nimport numpy as np\nimport scipy.optimize\nimport torch\nimport time"
   },
   {
     "objectID": "ipynb/5-TrainingNeuralNetworks_solved.html#optimization",
@@ -179,7 +179,7 @@
     "href": "index.html#content",
     "title": "Fundamentals of Machine Learning",
     "section": "Content",
-    "text": "Content\n\nPractical 1: getting started with scikit-learn -  or Download \nPractical 2: model selection, regularization -  or Download \nPractical 3: dimension reduction and clustering -  or Download \nPractical 4: trees and ensemble models -  or Download \nPractical 5: training neural networks"
+    "text": "Content\n\nPractical 1: getting started with scikit-learn -  or Download \nPractical 2: model selection, regularization -  or Download \nPractical 3: dimension reduction and clustering -  or Download \nPractical 4: trees and ensemble models -  or Download \nPractical 5: training neural networks -  or Download"
   },
   {
     "objectID": "index.html#advanced-use-git-and-nbstripout",
