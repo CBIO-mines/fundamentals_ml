@@ -4,7 +4,7 @@ title: "Course schedule"
 
 ## Week 1
 
-| block   	| start    	| end      	| subject                        	|
+| day   	| start    	| end      	| subject                        	|
 |---------	|----------	|----------	|--------------------------------	|
 | May 11 	| 10:15 AM  	| 11:45 AM 	| [Getting familiar with scikit-learn](ipynb/1-Intro_solved.ipynb) |
 | May 12 	| 10:15 AM  	| 11:45 AM 	| [Model selection and evaluation](ipynb/2-Selection_solved.ipynb) |
@@ -12,7 +12,7 @@ title: "Course schedule"
 
 ## Week 2
 
-| block   	| start    	| end      	| subject                        	|
+| day   	| start    	| end      	| subject                        	|
 |---------	|----------	|----------	|--------------------------------	|
 | May 18 	| 10:15 AM  	| 11:45 AM 	| [Trees and Ensemble Methods](ipynb/4-Trees_solved.ipynb) |
 | May 19 	| 10:15 AM  	| 11:45 AM 	| Optimization and neural networks |
